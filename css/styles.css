@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Libre Franklin", sans-serif;
+	font-size: 20px;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+:root {
+	--color-blue: hsl(223, 87%, 63%);
+	--color-pale-blue: hsl(223, 100%, 88%);
+	--light-red: hsl(354, 100%, 66%);
+	--color-gray: hsl(0, 0%, 59%);
+	--color-very-dark-blue: hsl(209, 33%, 12%);
+}
+
+main {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	height: 100vh;
+	width: 90%;
+	margin: 0 auto;
+	background-color: antiquewhite;
+	container-type: inline-size;
+}
+
+/* Logo image */
+main img:first-child {
+	width: 20cqi;
+	margin: 20cqi 0 12cqi 0;
+}
+
+/* We are launching soon! */
+main p:nth-child(2) {
+	color: var(--color-gray);
+	font-size: 6.5cqi;
+	margin-bottom: 3cqi;
+}
+
+/* Soon! span */
+.text-black-bold {
+	color: black;
+	font-weight: 700;
+}
+
+/* Subscribe and get notified */
+main p:nth-last-child(5) {
+	font-size: 3.5cqi;
+	margin-bottom: 6cqi;
+}
+
+/* Notify div input and button */
+.email-notify {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	
+	/* width inherited by input and button also */
+	width: 90cqi;
+}
+
+/* Notify form */
+.email-notify form {
+	width: inherit;
+}
+
+/* Notify input */
+.email-notify input {
+	display: block;
+	width: inherit;
+	line-height: 10cqi;
+	border-radius: 6cqi;
+	border: 3px solid var(--color-pale-blue);
+	padding-left: 8cqi;
+	font-size: 3.5cqi;
+	margin-bottom: 2cqi;
+}
+
+/* Placeholder for email input */
+.email-notify input::placeholder {
+	color: hsla(0, 0%, 0%, .25);
+}
+
+/* Noify Me button */
+.email-notify button {
+	width: inherit;
+	line-height: 10cqi;
+	border-radius: 6cqi;
+	border: none;
+	background-color: var(--color-blue);
+	color: white;
+	font-size: 3.5cqi;
+	margin-bottom: 15cqi;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
