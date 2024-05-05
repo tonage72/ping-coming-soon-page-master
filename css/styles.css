@@ -33,14 +33,13 @@ main {
 	height: 100vh;
 	width: 90%;
 	margin: 0 auto;
-	background-color: antiquewhite;
 	container-type: inline-size;
 }
 
 /* Logo image */
-main img:first-child {
+main > img:first-child {
 	width: 20cqi;
-	margin: 20cqi 0 12cqi 0;
+	margin: 26cqi 0 12cqi 0;
 }
 
 /* We are launching soon! */
@@ -59,7 +58,7 @@ main p:nth-child(2) {
 /* Subscribe and get notified */
 main p:nth-last-child(5) {
 	font-size: 3.5cqi;
-	margin-bottom: 6cqi;
+	margin-bottom: 10cqi;
 }
 
 /* Notify div input and button */
@@ -103,7 +102,29 @@ main p:nth-last-child(5) {
 	background-color: var(--color-blue);
 	color: white;
 	font-size: 3.5cqi;
-	margin-bottom: 15cqi;
+	margin-bottom: 18cqi;
+}
+
+/* Stats image */
+main > img:nth-child(5) {
+	margin-bottom: 30cqi;
+}
+
+/* All three social media links */
+.social-icons {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 3cqi;
+	margin-bottom: 11cqi;
+}
+
+/* img level control social media links */
+.social-icons img {
+	width: 10cqi;
+	border: 1px solid var(--color-gray);
+	padding: 2cqi;
+	filter: invert(28%) sepia(100%) saturate(2465%) hue-rotate(221deg) brightness(102%) contrast(101%);
+	border-radius: 50%;
 }
 
 .attribution {
