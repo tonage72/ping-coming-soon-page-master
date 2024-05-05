@@ -89,6 +89,10 @@ main p:nth-last-child(5) {
 	font-size: 3.5cqi;
 }
 
+.email-notify form input:focus {
+	outline: none;
+}
+
 /* Placeholder for email input */
 .email-notify input::placeholder {
 	color: hsla(0, 0%, 0%, .25);
@@ -164,6 +168,7 @@ main p:nth-child(7) {
 
 	/* Notify div input and button */
 	.email-notify {
+		position: relative;
 		flex-direction: row;
 		gap: 2cqi;
 		margin-bottom: 12cqi;
@@ -179,6 +184,7 @@ main p:nth-child(7) {
 	/* Noify Me button */
 	.email-notify button {
 		line-height: 8cqi;
+		margin-top: 0;
 	}
 
 	/* Subscribe and get notified */
@@ -199,6 +205,11 @@ main p:nth-child(7) {
 	/* img level control social media links */
 	.social-icons img {
 		width: 6cqi;
+	}
+
+	.error {
+		position: absolute;
+		top: 9cqi;
 	}
 }
 

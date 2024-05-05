@@ -19,6 +19,7 @@ function displayError(errorText) {
 	errorDisplay.style.display = 'block';
 	errorDisplay.innerText = errorText;
 	inputEmail.style.borderColor = 'red';
+	inputEmail.style.borderWidth = '3px';
 }
 
 function isEmail(email) {
