@@ -135,7 +135,7 @@ main p:nth-child(7) {
 
 .error {
 	color: red;
-	font-size: 4cqi;
+	font-size: 3cqi;
 	text-align: center;
 	display: none;
 }
