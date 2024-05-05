@@ -32,8 +32,9 @@ main {
 	align-items: center;
 	height: 100vh;
 	width: 90%;
+	max-width: 750px;
 	margin: 0 auto;
-	container-type: inline-size;
+	container: container-main / inline-size;
 }
 
 /* Logo image */
@@ -66,6 +67,7 @@ main p:nth-last-child(5) {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
+	margin-bottom: 18cqi;
 	
 	/* width inherited by input and button also */
 	width: 90cqi;
@@ -85,7 +87,6 @@ main p:nth-last-child(5) {
 	border: 3px solid var(--color-pale-blue);
 	padding-left: 8cqi;
 	font-size: 3.5cqi;
-	margin-bottom: 2cqi;
 }
 
 /* Placeholder for email input */
@@ -102,7 +103,7 @@ main p:nth-last-child(5) {
 	background-color: var(--color-blue);
 	color: white;
 	font-size: 3.5cqi;
-	margin-bottom: 18cqi;
+	margin-top: 2cqi;
 }
 
 /* Stats image */
@@ -127,9 +128,85 @@ main > img:nth-child(5) {
 	border-radius: 50%;
 }
 
+/* Copyright */
+main p:nth-child(7) {
+	font-size: 4cqi;
+}
+
+.error {
+	color: red;
+	font-size: 4cqi;
+	text-align: center;
+	display: none;
+}
+
+@container container-main (width >= 700px) {
+
+	/* Logo image */
+	main > img:first-child {
+		margin: 10cqi 0 12cqi 0;
+	}
+}
+
+@media (width >= 1100px) {
+
+	main {
+		width: 42%;
+		max-width: 1050px;
+		height: auto;
+	}
+
+	/* Logo image */
+	main > img:first-child {
+		margin-bottom: 6cqi;
+		margin-top: 12cqi;
+}
+
+	/* Notify div input and button */
+	.email-notify {
+		flex-direction: row;
+		gap: 2cqi;
+		margin-bottom: 12cqi;
+	}
+
+	/* Notify input */
+	.email-notify input {
+		width: 60cqi;
+		margin-bottom: 0;
+		line-height: 8cqi;
+	}
+
+	/* Noify Me button */
+	.email-notify button {
+		line-height: 8cqi;
+	}
+
+	/* Subscribe and get notified */
+	main p:nth-last-child(5) {
+		margin-bottom: 6cqi;
+	}
+
+	/* Stats image */
+	main > img:nth-child(5) {
+		margin-bottom: 12cqi;
+	}
+
+	/* All three social media links */
+	.social-icons {
+		margin-bottom: 5cqi;
+	}
+
+	/* img level control social media links */
+	.social-icons img {
+		width: 6cqi;
+	}
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .attribution a {
