@@ -30,7 +30,6 @@ main {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
-	height: 100vh;
 	width: 90%;
 	max-width: 750px;
 	margin: 0 auto;
@@ -108,6 +107,7 @@ main p:nth-last-child(5) {
 	color: white;
 	font-size: 3.5cqi;
 	margin-top: 2cqi;
+	cursor: pointer;
 }
 
 /* Stats image */
@@ -123,13 +123,25 @@ main > img:nth-child(5) {
 	margin-bottom: 11cqi;
 }
 
+/* Wrapper for social images */
+.social-icons figure {
+	border: 1px solid var(--color-pale-blue);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.social-icons figure:hover {
+	background-color: var(--color-blue);
+}
+
+.social-icons figure:hover img {
+	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
 /* img level control social media links */
 .social-icons img {
-	width: 10cqi;
-	border: 1px solid var(--color-gray);
 	padding: 2cqi;
 	filter: invert(28%) sepia(100%) saturate(2465%) hue-rotate(221deg) brightness(102%) contrast(101%);
-	border-radius: 50%;
 }
 
 /* Copyright */
